@@ -1,0 +1,60 @@
+body{
+    background: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 700px;
+    height: 700px;
+    padding: 0.8rem;
+    margin: 16px auto;
+    background: white;
+    position: relative;
+}
+#novo{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header{
+    padding: 16px;
+    background: #0497f3;
+}
+
+#header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#header a:hover {
+   background-color: white;
+   color:  #0497f3;
+}
+
+#chat{
+    width: 200px;
+    height: 230px;
+    background: violet;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#chat p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+input{
+    width: 160px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+h1{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
