@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index sobreposição</title>
+    <style>
+        /* z-indsex não funciona com position:static (o padrão)
+            -quanto maior o índice, mais à frente fica o objeto;
+            -aceita valores negativos: -1, joga o item para baixo de todos;
+            -se não for definido nenhum z-index, a ordem fica na qual 
+            aparece no cógio: nesse exemplo a caixa 3 ficaria sobre as outras
+         */
+        /* .caixa1{
+            border: 1px solid blue;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 15px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        .caixa2{    
+            border: 1px solid red;
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 5px;
+            left: 80px;
+            z-index: 1;
+        }
+        .caixa3{
+            border: 1px solid green;
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            z-index: 3;
+        } */
+
+        .caixa{
+            background-color: purple;
+            width: 700px;
+            height: 250px;
+            position: relative;
+        }
+        .destaque{
+            position: absolute;
+            background-color: orange;
+            color: white;
+            border-radius: 30px;
+            /* width: 150px;
+            height: 20px;
+            text-align: center; */
+            left: 2em;
+            bottom: 2.5rem;
+            padding: 10px 16px;
+        }
+        .promocao{
+            width: 500px;
+            padding: 20px;
+            border: 2px dotted purple;
+            color: purple;
+            background-color: white;
+            text-align: center;
+            position: absolute;
+            left: 70px; 
+            bottom: -2.4rem;
+            z-index: 10;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício</h1>
+        <div class="caixa">
+
+        <img src="/z-index/img/banner.png" width="700">
+
+        <div class="destaque">
+            Tempo limitado
+        </div>
+
+        <div class="promocao">
+            Quero a promoção
+        </div>
+    </div>
+    <!-- <div class="caixa1">
+        Caixa 1
+    </div>
+
+    <div class="caixa2">
+        Caixa 2
+    </div>
+
+    <div class="caixa3">
+        Caixa 3
+    </div> -->
+</body>
+</html>
