@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementops Flutuantes - Float</title>
+    <style>
+        /* Float faz o texto ficar ao redor, diferenmte do absolute */
+        /* p {
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+
+        img {
+            border: 1px solid blue;
+            background-color: antiquewhite;
+            float: left;
+        } */
+         .caixa{
+            border: 3px solid purple;
+            background-color: blue;
+            margin: 5px;
+            width: 150px;
+            height: 150px;
+         }
+
+         .esquerda {
+            float: left;
+         }
+
+         /* 
+         alteração teste para posicionar a caixa que moveu errado
+            .direita {
+            margin-top: 0;
+            position: absolute;
+            top: 175px;
+         } */
+    </style>
+</head>
+<body>
+
+    <div class="caixa esquerda" >
+        Caixa 1
+    </div>
+
+    <div class="caixa esquerda" >
+        Caixa 2
+    </div>
+
+    <div class="caixa esquerda" >
+        Caixa 3
+    </div>
+
+    <div class="caixa esquerda">
+        Caixa 4
+    </div>
+    <!-- tomar cuidado com a altura, as caixas passam da direita para esquerda
+     quando estão descendo!! -->
+    <div class="caixa esquerda" style="height: 200px"> 
+        Caixa 5
+    </div>
+
+    <div class="caixa esquerda direita">
+        Caixa 6
+    </div>
+    <!-- <img src="/z-index/img/celular1.png" width="200">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non, in, optio nesciunt minus facilis illo obcaecati qui nisi ratione exercitationem ex similique saepe illum quia unde nobis labore rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non, in, optio nesciunt minus facilis illo obcaecati qui nisi ratione exercitationem ex similique saepe illum quia unde nobis labore rerum.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non, in, optio nesciunt minus facilis illo obcaecati qui nisi ratione exercitationem ex similique saepe illum quia unde nobis labore rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non, in, optio nesciunt minus facilis illo obcaecati qui nisi ratione exercitationem ex similique saepe illum quia unde nobis labore rerum.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non, in, optio nesciunt minus facilis illo obcaecati qui nisi ratione exercitationem ex similique saepe illum quia unde nobis labore rerum.</p> -->
+</body>
+</html>
