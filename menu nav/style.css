@@ -1,0 +1,42 @@
+#menu, ul {
+    background-color: orange;
+    width: 200px;
+}
+a {
+    display: block;
+    text-decoration: none;
+    padding: 7px 1.5rem;
+    color: black;
+    /* background-image: url(./1b-arquivos-necessarios-barra-navegacao-vertical/seta.png);
+    background-repeat: no-repeat;
+    background-position: 0.5rem center; */
+    background: url(./1b-arquivos-necessarios-barra-navegacao-vertical/seta.png) no-repeat 0.5rem center;
+
+}
+img {
+    margin: 0 8px 0 0;
+}
+#menu li a:hover {
+    /* background-color: darkorange; */
+    padding-left: 2rem;
+    color: white;
+    /* background-image: url(./1b-arquivos-necessarios-barra-navegacao-vertical/seta.png);
+    background-repeat: no-repeat;
+    background-position: 1.2rem center; */
+    background: darkorange url(./1b-arquivos-necessarios-barra-navegacao-vertical/seta.png) no-repeat 1.2rem center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+#menu li a:active {
+    background-color: #885000;
+}
+
+#menu li.selecionado a{
+    padding-left: 2rem;
+    color: white;
+    background: darkorange url(./1b-arquivos-necessarios-barra-navegacao-vertical/seta.png) no-repeat 1.2rem center;
+}
