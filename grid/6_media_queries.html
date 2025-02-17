@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-size: 1.5rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            
+        }
+
+        .grid{
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "topo"
+                "menu"
+                "principal"
+                "rodape"
+            ;
+        }
+        header, nav, main, footer{
+            border: 3px solid yellowgreen;
+        }
+
+        /* Grid template areas: vc nomeia as áres e distribui pelos nomes, baseando-se apenas pelas colunas */
+        header{grid-area: topo;}
+        nav{grid-area: menu;}
+        main{grid-area: principal;}
+        footer{grid-area: rodape;}
+
+        @media (min-width: 600px) {
+            .grid{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "topo menu"
+                "principal principal"
+                "rodape rodape"
+            ;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "topo topo topo"
+                "menu principal principal"
+                "rodape rodape rodape"
+            ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="grid">
+    <header>Cabeçalho</header>
+    <nav>Home | Produtos | Login | Cadastro</nav>
+    <main>
+        <h2>Contéudo do site</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Fuga perspiciatis mollitia ipsum similique quas rerum, 
+            neque earum tenetur aspernatur, maxime fugit, praesentium
+            provident explicabo. Consequuntur quod odio ullam sunt id!
+        </p>
+    </main>
+    <footer>Rodapé</footer>
+</div>
+
+</body>
+</html>
