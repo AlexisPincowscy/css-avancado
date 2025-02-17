@@ -16,29 +16,41 @@
         }
 
         .grid{
-            /* vh viewport height (aluta total da tela visual)
-            vw viewport width (largura total da tela visível) */
-            height: 100vh;
             display: grid;
-            /* grid-template-columns: 200px 200px 200px;
-            grid-template-columns: 40% 100px 33%; 
-            grid-template-columns: repeat(2, 20%) 500px; (faz duas de 20% e uma de 500px)
-            grid-template-columns: 33% 34% 33%;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-columns: 200px 1fr 1fr;
-            grid-template-columns: repeat(2, 1fr) 2fr; 
-            grid-template-columns: 200px 1fr 2fr;
-            grid-template-columns: 20% 15% auto auto;*/
-            grid-template-columns: repeat(3, auto);
-
-            /* grid-template-rows: 1fr 150px 1fr 300px; 
-            grid-template-rows: 1fr 2fr 4fr 1fr;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-rows: 30% 100px 4fr 1fr;*/
-
-            /* espaçamento interno coluna e linha */
+            grid-template-columns: repeat(3, auto); /* pode ser numerado ou dado nome*/
             row-gap: 20px;
-            column-gap: 10px;
+            column-gap: 20px;
+        }
+        .item1{
+            /* grid-column-start : 1
+                grid-column-end: 3;
+                pode ser escrito
+            */
+            grid-column: 1/3; /* 1 start e 3 end*/
+            grid-row: 1 / 3;
+
+            /* outras versões de escrita:
+            grid-column: 1 / span (começa do 1 e expande pro resto)
+            grid-row: span 3 (span de expandir e o valor é a linha final) */
+        }
+        .item5 {
+            /* grid-column start (ponto de início)
+            grid-column-end (ponto final) */
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5; 
+            grid-column-start: 2; (faz espaço onde estava, empuirra tudo da esquerda para direta e para baixo)
+            
+            - pode usar valores negativos (vai ser da dierta pra esquerda e de baixo para cima)
+            NÃO É COMUM
+            grid-column-start: -1;*/
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
         }
         .grid > div{
             border: 02px solid red;
