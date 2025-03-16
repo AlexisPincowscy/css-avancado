@@ -1,2 +1,2 @@
-# css-avancado
-Aulas de css avançadas (posicionamentos/grids/flex)
+# Aulas de CSS avançado
+Aulas de CSS avançadas (posicionamentos/grids/flex)
